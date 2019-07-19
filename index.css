@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* global values */
+header, 
+nav, 
+article, 
+aside, 
+footer {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* header */
+header #logo {
+    font-size: 55px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header #desc {
+    font-size: 24px;
+    text-transform: lowercase;
+    font-family: 'Courier New', Courier, monospace;
+    word-wrap: break-word;
+}
+
+/* nav */
+nav ol,
+footer section ol,
+article section ol {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+nav ol li, 
+footer section ol li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 25px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #000000;
+    outline: none;
+}
+
+nav ol li a:hover {
+    font-style: oblique;
+    font-family: cursive;
+}
+
+nav ol li a:active {
+    font-weight: bold;
+    font-style: oblique;
+    font-family: cursive;
+}
+
+/* Article */
+article section,
+footer section {
+    width: 90%;
+    background-color: #e6e6e6;
+    margin: 15px auto;
+}
+
+article section h2, 
+aside section p, 
+footer section p,
+footer section ol li{
+    font-style: italic;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+article section img {
+    width: 80%;
+    min-height: 300px;
+    max-height: 500px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* Aside */
+aside section {
+    width: 20%;
+    display: inline-block;
+    /* background-color: #f4f4f4; */
+    background-color: #e8491d;
+    margin: 15px auto;
+}
+
+aside section img {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+/* footer */
+footer section p {
+    display: inline-block;
+}
+
+article section ol li {
+    width: auto;
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;    
+}
+
+.current-nav {
+    font-weight: bold;
+    font-style: oblique;
+    font-family: cursive;
+}
+
+@media(max-width: 1000px) {
+    aside section {
+        display: block;
+    }
+}
+
+@media(max-width: 768px) {
+    nav ol li, 
+    footer section ol li,
+    article section ol li {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    article section, 
+    footer section, 
+    aside section, 
+    footer section {
+        width: auto;
+        display: block;
+    }
+
+    article section img {
+        height: 250px;
+    }
+}
